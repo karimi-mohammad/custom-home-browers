@@ -1,0 +1,8 @@
+-scss
+--bootstrap
+--clock
+--jscookie
+--jquery
+--sweetalert
+--chart
+ npx parcel index.html
