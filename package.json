@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "sass": "^1.71.1"
+  },
+  "scripts": {
+    "dev": "npx parcel index.html"
   }
 }
