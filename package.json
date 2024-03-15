@@ -5,7 +5,6 @@
     "jquery": "^3.7.1",
     "jscookie": "^1.1.0",
     "lightweight-clock": "^1.0.2",
-    "parcel": "^2.12.0",
     "sweetalert2": "^11.10.6"
   },
   "devDependencies": {
