@@ -42,6 +42,45 @@ body {
   > #right-panel {
   }
 
+  > #left-panel {
+    text-align: center;
+
+    > #dataAndTime {
+      height: 30%;
+
+      > #times {
+        margin-top: 20px;
+      }
+      > #dates {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    > #timer {
+      height: 40%;
+      > #title {
+        color: red;
+      }
+      > #start {
+        margin-top: 20px;
+        color: #41aadd;
+        button {
+          width: 60%;
+          border: none;
+          cursor: pointer;
+          border-top-right-radius: 50%;
+          border-top-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          border-bottom-left-radius: 50%;
+          padding: 10px;
+          font-weight: 600;
+          background-color: green;
+        }
+      }
+    }
+  }
+
   margin-top: 4% !important;
   margin-left: 2vw !important;
   margin-right: 2vw !important;
