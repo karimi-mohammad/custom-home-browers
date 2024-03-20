@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="fa">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="./style.scss" />
 
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.rtl.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="./style.scss" />
 
-    <script src="./index.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <style></style>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.rtl.min.css" />
 
-  <body dir="rtl">
-    <div class="main">
-      <div class="row justify-content-center" id="search-box">
-        <div class="col-7"></div>
+  <script src="./index.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style></style>
+
+<body dir="rtl">
+  <div class="main">
+    <div class="row justify-content-center" id="search-box">
+      <div class="col-7"></div>
+    </div>
+    <div class="row justify-content-around align-items-center" id="content">
+      <div class="col-3" id="right-panel">
+        <div class="city-container row justify-content-center align-items-center">
+          <div id="city" class="col-2">
+            <p class="text-center">تهران</p>
+          </div>
+        </div>
+        <div class="temperature row justify-content-center align-items-center">
+          <div class="unit col-1">°</div>
+          <div class="value col-1">22</div>
+        </div>
+
       </div>
-      <div class="row justify-content-around align-items-center" id="content">
-        <div class="col-3" id="right-panel"></div>
-        <div class="col-5"></div>
-        <div class="col-3" id="left-panel">
-          <div id="dataAndTime">
-            <div id="times">
-              <h1>time</h1>
-              <h3>time</h3>
-            </div>
-            <div id="dates">
-              <span>date</span>
-              <span>date</span>
-            </div>
-            <hr />
+      <div class="col-5"></div>
+      <div class="col-3" id="left-panel">
+        <div id="dataAndTime">
+          <div id="times">
+            <h1>time</h1>
+            <h3>time</h3>
           </div>
-          <div id="timer">
-            <div id="title">
-              <h1>زمانسنج</h1>
-            </div>
-            <div id="start">
-              <h3>00:00:00</h3>
-              <button>شروع</button>
-            </div>
-            <hr />
+          <div id="dates">
+            <span>date</span>
+            <span>date</span>
           </div>
+          <hr />
+        </div>
+        <div id="timer">
+          <div id="title">
+            <h1>زمانسنج</h1>
+          </div>
+          <div id="start">
+            <h3>00:00:00</h3>
+            <button>شروع</button>
+          </div>
+          <hr />
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

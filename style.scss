@@ -1,87 +1,123 @@
 $dark-blue: #006597;
 $light-blue: #41aadd;
 $light-gray: #d8d5e9;
+$light-magenta : #C2C2F9;
 
 html,
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .main {
-  background-image: linear-gradient(to top, $light-blue, $dark-blue);
-  width: 100%;
-  height: 100%;
+    background-image: linear-gradient(to top, $light-blue, $dark-blue);
+    width: 100%;
+    height: 100%;
 }
 
 .row {
-  margin: 0 !important;
+    margin: 0 !important;
 }
 
 #search-box {
-  > div {
-    margin-top: 5% !important;
-    height: 7vh;
-    background: $light-gray;
-  }
+    >div {
+        margin-top: 5% !important;
+        height: 7vh;
+        background: $light-gray;
+    }
 }
 
 #content {
-  > div {
-    background-color: $light-gray;
-    height: 50vh;
-    border-radius: 41px;
-    -webkit-border-radius: 41px;
-    -moz-border-radius: 41px;
-    -ms-border-radius: 41px;
-    -o-border-radius: 41px;
-  }
-
-  > #right-panel {
-  }
-
-  > #left-panel {
-    text-align: center;
-
-    > #dataAndTime {
-      height: 30%;
-
-      > #times {
-        margin-top: 20px;
-      }
-      > #dates {
-        display: flex;
-        justify-content: space-between;
-      }
+    >div {
+        background-color: $light-gray;
+        height: 50vh;
+        border-radius: 41px;
+        -webkit-border-radius: 41px;
+        -moz-border-radius: 41px;
+        -ms-border-radius: 41px;
+        -o-border-radius: 41px;
     }
 
-    > #timer {
-      height: 40%;
-      > #title {
-        color: red;
-      }
-      > #start {
-        margin-top: 20px;
-        color: #41aadd;
-        button {
-          width: 60%;
-          border: none;
-          cursor: pointer;
-          border-top-right-radius: 50%;
-          border-top-left-radius: 50%;
-          border-bottom-right-radius: 50%;
-          border-bottom-left-radius: 50%;
-          padding: 10px;
-          font-weight: 600;
-          background-color: green;
+    >#right-panel {
+        .city-container {
+            #city {
+                p {
+                    margin-bottom: 4%;
+                    margin-top: 1%;
+                    font-size: 26px;
+                }
+
+                width: 50%;
+                background-color: $light-magenta;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+            }
         }
-      }
-    }
-  }
 
-  margin-top: 4% !important;
-  margin-left: 2vw !important;
-  margin-right: 2vw !important;
+        .temperature {
+
+            >div {
+                width: fit-content;
+                padding-left: 0px;
+                padding-right: 0px;
+                font-size: 63px;
+            }
+
+            margin-top: 5% !important;
+        }
+
+        padding-top: 2%;
+    }
+
+    >#left-panel {
+        text-align: center;
+
+        >#dataAndTime {
+            height: 30%;
+
+            >#times {
+                margin-top: 20px;
+            }
+
+            >#dates {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        >#timer {
+            height: 40%;
+
+            >#title {
+                color: red;
+            }
+
+            >#start {
+                margin-top: 20px;
+                color: #41aadd;
+
+                button {
+                    width: 60%;
+                    border: none;
+                    cursor: pointer;
+                    border-top-right-radius: 50%;
+                    border-top-left-radius: 50%;
+                    border-bottom-right-radius: 50%;
+                    border-bottom-left-radius: 50%;
+                    padding: 10px;
+                    font-weight: 600;
+                    background-color: green;
+                }
+            }
+        }
+    }
+
+    margin-top: 4% !important;
+    margin-left: 2vw !important;
+    margin-right: 2vw !important;
 }
