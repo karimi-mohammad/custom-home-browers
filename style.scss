@@ -2,6 +2,7 @@ $dark-blue: #006597;
 $light-blue: #41aadd;
 $light-gray: #d8d5e9;
 $light-magenta : #C2C2F9;
+$white : white;
 
 @font-face {
     font-family: 'A Naskh Tahrir';
@@ -45,6 +46,27 @@ body {
         -o-border-radius: 41px;
     }
 
+    >#center-panel {
+        >.row {
+            >* {
+                >.icon {}
+
+                >.description {
+                    text-align: center;
+                    font-family: '2 Homa';
+                }
+
+                margin-top: 3%;
+                background-color: $white;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+            }
+        }
+    }
+
     >#right-panel {
         .city-container {
             #city {
@@ -79,7 +101,41 @@ body {
                 font-size: 43px;
             }
 
-            margin-top: 5% !important;
+            margin-top: 1% !important;
+        }
+
+        .day-temp {
+            >* {
+                width: min-content;
+                margin-bottom: 0;
+            }
+
+            * {
+                font-family: 'A Naskh Tahrir';
+                font-size: 30px;
+            }
+
+            >p {
+                font-size: 20px;
+                padding: 0.7%;
+            }
+
+            .min,
+            .max {
+                display: block ruby;
+                padding: 0;
+            }
+
+            .unit {
+                width: min-content;
+                padding: 0;
+            }
+
+            .col-1 {
+                padding: 0;
+            }
+
+            // display: block ruby;
         }
 
         padding-top: 2%;
